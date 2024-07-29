@@ -1,0 +1,24 @@
+<div class="main-container">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Id</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let b of books">
+                    <td>{{b.bookid}}</td>
+                    <td>{{b.booktitle}}</td>
+                    <td>{{b.genre}}</td>
+                    <td>
+                        <button (click)="getbook(b.bookid)">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

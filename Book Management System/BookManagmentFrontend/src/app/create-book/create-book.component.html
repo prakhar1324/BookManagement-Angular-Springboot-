@@ -1,0 +1,29 @@
+<div class="main-container">
+    <div class="form-container">
+        <h2>Add a New Book</h2>
+        <form (ngSubmit)="addBook()">
+            <table>
+                <tr>
+                    <td>Book ID:</td>
+                    <td><input type="text" name="bookid" [(ngModel)]="bookobj.bookid" required></td>
+                </tr>
+                <tr>
+                    <td>Book Name:</td>
+                    <td><input type="text" name="booktitle" [(ngModel)]="bookobj.booktitle" required></td>
+                </tr>
+                <tr>
+                    <td>Book Price:</td>
+                    <td><input type="text" name="bookprice" [(ngModel)]="bookobj.bookprice" required></td>
+                </tr>
+                <tr>
+                    <td>Book Genre:</td>
+                    <td><input type="text" name="genre" [(ngModel)]="bookobj.genre" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

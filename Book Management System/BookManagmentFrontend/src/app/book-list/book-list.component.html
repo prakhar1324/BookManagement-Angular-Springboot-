@@ -1,0 +1,28 @@
+<div class="main-container">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Genre</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let b of books">
+                    <td>{{b.bookid}}</td>
+                    <td>{{b.booktitle}}</td>
+                    <td>{{b.bookprice}}</td>
+                    <td>{{b.genre}}</td>
+                    <td>
+                        <button (click)="deleteBook(b.bookid)">Delete</button>
+                        <button (click)="updateBook(b.bookid)">Update</button>
+                        <button (click)="getbook(b.bookid)">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

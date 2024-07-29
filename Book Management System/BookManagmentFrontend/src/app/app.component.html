@@ -1,0 +1,44 @@
+
+<div>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="mx-3 navbar-brand" routerLink="/home">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/create">Create Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/books">BookDetails</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/list">BookList</a>
+        </li>
+        </ul>
+    </div>
+   
+  </nav>
+
+  <router-outlet></router-outlet>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-content">
+        <h2>Magic of Books Library</h2>
+        <ul class="footer-links">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Privacy Policy</a></li>
+        </ul>
+        <div class="footer-bottom">
+            &copy; 2024 Magic of Books. All rights reserved.
+        </div>
+    </div>
+</div>
+
+  </div>
+  
